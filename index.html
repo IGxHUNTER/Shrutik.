@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/932318d4a6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <a href="#header">
+            <img src="images/Logo.png" class="logo">
+            </a>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>UI/UX Designer, Web Developer</p>
+            <h1>Hey, I'm <span>Shrutik</span><br>Tambade From Pune</h1>
+        </div>
+    </div>
+</div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user1.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am currently focused on UI/UX design and have 3 years of experience in web development. Skilled in HTML, CSS, and JavaScript, I enjoy creating smooth, user-friendly designs that make digital experiences accessible to all.
+                <br>Beyond work, I love gaming, football, reading, learning new things, and forex trading (demo) with friends—having fun while exploring market strategies. I’m also a huge fan of Dragon Ball Z, inspired by its legendary battles and powerful characters.
+                <br>As someone with hearing impairment, I value inclusive design and strive to build websites that everyone can enjoy.
+                <br>Let’s create something awesome together!</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Desiging Web/App interfaces</li>
+                        <li><span>App Development</span><br>Building Android apps</li>
+                        <li><span>Web Development</span><br>Web App Development</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2025 - current</span><br>UI/UX Design Training at Coursera</li>
+                        <li><span>2020 - 2022, 2025 - current</span><br>ITech Computer Education, Udemy</li>
+                        <li><span>2019 - 2024</span><br>ITech Computer Education</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2025 - current</span><br>UI/UX Design Training at Coursera</li>
+                        <li><span>2023 - 2025</span><br>B.Sc in Computer Science from Pune.</li>
+                        <li><span>2019 - 2023</span><br>Diploma in Computer Engineering from Pune.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 
+<!-- -----------------services---------------- -->
+ <div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>I build visually striking and responsive websites using HTML, CSS, and JavaScript, ensuring seamless functionality, engaging aesthetics, and an intuitive user experience.</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>UI/UX Design</h2>
+                <p>I craft intuitive and engaging digital interfaces using Figma, focusing on seamless user journeys, effective interaction strategies, and visually compelling designs.</p>
+            </div> 
+            <div>
+                <i class="fa-solid fa-mobile-screen-button"></i>
+                <h2>App Design</h2>
+                <p>I develop user-centric applications through Android application programming, ensuring optimal usability, accessibility, and immersive experiences tailored to various devices.</p>
+            </div>     
+        </div>
+    </div>
+ </div>
+<!-- -----------------portfolio----------------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Project</h1>
+        <div class="project-list">
+            <div class="project">
+                <img src="images/Web online order.png">
+                <div class="layer">
+                    <h3>Online Food Web</h3>
+                    <p>A web-based food ordering system that allows users to browse menus, place orders, and make payments online.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>UI/UX Design for Online Food Ordering App</h3>
+                    <p>Design a user-friendly and visually appealing food ordering app for seamless ordering and better user experience.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>UI/UX Design for OTT Streaming Platform</h3>
+                    <p>Design a user-friendly and visually appealing OTT streaming platform for seamless content consumption and better user experience.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">Home</a>
+    </div>
+</div>
+<!-- -----------------contact----------------- -->
+ <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> tambadeshrutik02@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 7769202482 & 8956721365</p>
+                <div class="social-icons">
+                    <a href="https://x.com/02_Shrutik"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.instagram.com/shrutik_tambade_02/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/shrutik-tambade-80a0a3345/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/IGxHUNTER"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://discord.com/channels/@me"><i class="fa-brands fa-discord"></i></a>
+                </div>
+                <div class="btn-center">
+                    <a href="" download class="btn btn2">Download CV</a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message" ></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright ⓒ by Shrutik. <i class="fa-solid fa-heart"></i> </p>
+    </div>
+ </div>
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+</script>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzAWkz6Ga0VrmDaNePk5Lri-PL9Q6ZJFnn0-V0ceTO0JhUFIfdnndutjGWBDtGtt_ia/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfully!"
+        setTimeout(function(){
+            msg.innerHTML = ""
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>
+</html>
